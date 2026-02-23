@@ -1,0 +1,31 @@
+	CREATE TABLE dimension.insurance_plan_new (
+		[Insurance_Plan_Key_Lakehouse] [bigint] NULL,
+		[Source_Key_Lakehouse] [int] NULL,
+		[Insurance_Plan_Key_Natural] [varchar](100) NULL,
+		[Insurance_Plan_Company_Name] [varchar](200) NULL,
+		[Insurance_Plan_Group_Name] [varchar](100) NULL,
+		[Insurance_Plan_Group_Number] [varchar](100) NULL,
+		[Insurance_Plan_Renewal_Month] [varchar](50) NULL,
+			[Plan_Employer] [varchar](200) NULL,
+            [Deductible_Standard_Individual_Lifetime] [decimal](14,6) NULL,
+            [Deductible_Standard_Individual_Annual] [decimal](14,6) NULL,
+            [Deductible_Standard_Family_Annual] [decimal](14,6) NULL,
+            [Deductible_Preventative_Individual_Lifetime] [decimal](14,6) NULL,
+            [Deductible_Preventative_Individual_Annual] [decimal](14,6) NULL,
+            [Deductible_Preventative_Family_Annual] [decimal](14,6) NULL,
+            [Deductible_Other_Individual_Lifetime] [decimal](14,6) NULL,
+            [Deductible_Other_Individual_Annual] [decimal](14,6) NULL,
+            [Deductible_Other_Family_Annual] [decimal](14,6) NULL,
+            [Fee_Schedule_Key_Natural] [bigint] NULL,
+            [Maximum_Benefit_Individual] [decimal](14,6) NULL,
+            [Ortho_Plan] BIT NULL, 
+		[Inserted_Date_Time] [datetime2](5) NULL,
+		[Updated_Date_Time] [datetime2](5) NULL,
+		Pipeline_Id	VARCHAR(100) NULL,
+		Log_Id	VARCHAR(100) NULL,
+		HashKey VARBINARY(8000),
+		Deleted_Flag_Hard BIT NULL,
+		Deleted_Flag_Soft BIT NULL
+		)	
+
+;

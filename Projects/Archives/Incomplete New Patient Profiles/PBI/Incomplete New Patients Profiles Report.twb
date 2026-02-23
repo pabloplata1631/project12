@@ -1,0 +1,1479 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0313.2002                               -->
+<workbook original-version='18.1' source-build='2025.1.0 (20251.25.0313.2002)' source-platform='win' version='18.1' xml:base='https://prod-useast-b.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <ISO8601DefaultCalendarPref />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SingleValuePerNestSorting />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='IncompleteNewPatientProfilesReport' path='/t/thesmilistanalytics/workbooks' revision='1.0' site='thesmilistanalytics' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Incomplete New Patient Profiles' inline='true' name='sqlproxy.0a7db8b0epoo661245v0a1aalfac' version='18.1'>
+      <repository-location id='IncompleteNewPatientProfiles' path='/t/thesmilistanalytics/datasources' revision='1.0' site='thesmilistanalytics' />
+      <connection channel='https' class='sqlproxy' dbname='IncompleteNewPatientProfiles' local-dataserver='' port='443' server='prod-useast-b.online.tableau.com' server-oauth='' username='' workgroup-auth-mode='prompt'>
+        <relation name='sqlproxy' table='[sqlproxy]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>appointment_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[appointment_date]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>appointment_date</remote-alias>
+            <ordinal>2</ordinal>
+            <layered>true</layered>
+            <family>Custom SQL Query</family>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <object-id>[_6ED966A8B3494F35A4F1E91038FA6375]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>appointment_id_source</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[appointment_id_source]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>appointment_id_source</remote-alias>
+            <ordinal>3</ordinal>
+            <layered>true</layered>
+            <family>Custom SQL Query</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <object-id>[_6ED966A8B3494F35A4F1E91038FA6375]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clinic_id_reference1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[clinic_id_reference1]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>clinic_id_reference1</remote-alias>
+            <ordinal>4</ordinal>
+            <layered>true</layered>
+            <family>Custom SQL Query</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <object-id>[_6ED966A8B3494F35A4F1E91038FA6375]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clinic_id_reference</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[clinic_id_reference]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>clinic_id_reference</remote-alias>
+            <ordinal>14</ordinal>
+            <layered>true</layered>
+            <family>Custom SQL Query</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <object-id>[_6ED966A8B3494F35A4F1E91038FA6375]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clinic_id_source</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[clinic_id_source]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>clinic_id_source</remote-alias>
+            <ordinal>5</ordinal>
+            <layered>true</layered>
+            <family>Custom SQL Query</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <object-id>[_6ED966A8B3494F35A4F1E91038FA6375]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clinic_name_reference</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[clinic_name_reference]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>clinic_name_reference</remote-alias>
+            <ordinal>18</ordinal>
+            <layered>true</layered>
+            <family>Custom SQL Query</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <object-id>[_6ED966A8B3494F35A4F1E91038FA6375]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>created_date_warehouse</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[created_date_warehouse]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>created_date_warehouse</remote-alias>
+            <ordinal>15</ordinal>
+            <layered>true</layered>
+            <family>Custom SQL Query</family>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <object-id>[_6ED966A8B3494F35A4F1E91038FA6375]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data_source_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[data_source_id]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>data_source_id</remote-alias>
+            <ordinal>0</ordinal>
+            <layered>true</layered>
+            <family>Custom SQL Query</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <object-id>[_6ED966A8B3494F35A4F1E91038FA6375]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_of_dentrix</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date_of_dentrix]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>date_of_dentrix</remote-alias>
+            <ordinal>21</ordinal>
+            <layered>true</layered>
+            <family>Custom SQL Query</family>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <object-id>[_6ED966A8B3494F35A4F1E91038FA6375]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gl_code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gl_code]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>gl_code</remote-alias>
+            <ordinal>19</ordinal>
+            <layered>true</layered>
+            <family>Custom SQL Query</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <object-id>[_6ED966A8B3494F35A4F1E91038FA6375]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_deleted_warehouse</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[is_deleted_warehouse]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>is_deleted_warehouse</remote-alias>
+            <ordinal>17</ordinal>
+            <layered>true</layered>
+            <family>Custom SQL Query</family>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <object-id>[_6ED966A8B3494F35A4F1E91038FA6375]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_sbs</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[is_sbs]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>is_sbs</remote-alias>
+            <ordinal>22</ordinal>
+            <layered>true</layered>
+            <family>Custom SQL Query</family>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <object-id>[_6ED966A8B3494F35A4F1E91038FA6375]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>modified_date_warehouse</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[modified_date_warehouse]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>modified_date_warehouse</remote-alias>
+            <ordinal>16</ordinal>
+            <layered>true</layered>
+            <family>Custom SQL Query</family>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <object-id>[_6ED966A8B3494F35A4F1E91038FA6375]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>patient_chart</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[patient_chart]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>patient_chart</remote-alias>
+            <ordinal>13</ordinal>
+            <layered>true</layered>
+            <caption>chart ID</caption>
+            <family>Custom SQL Query</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <object-id>[_6ED966A8B3494F35A4F1E91038FA6375]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>patient_date_of_birth</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[patient_date_of_birth]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>patient_date_of_birth</remote-alias>
+            <ordinal>12</ordinal>
+            <layered>true</layered>
+            <family>Custom SQL Query</family>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <object-id>[_6ED966A8B3494F35A4F1E91038FA6375]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>patient_first_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[patient_first_name]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>patient_first_name</remote-alias>
+            <ordinal>10</ordinal>
+            <layered>true</layered>
+            <family>Custom SQL Query</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <object-id>[_6ED966A8B3494F35A4F1E91038FA6375]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>patient_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[patient_id]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>patient_id</remote-alias>
+            <ordinal>9</ordinal>
+            <layered>true</layered>
+            <family>Custom SQL Query</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <object-id>[_6ED966A8B3494F35A4F1E91038FA6375]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>patient_id_source</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[patient_id_source]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>patient_id_source</remote-alias>
+            <ordinal>1</ordinal>
+            <layered>true</layered>
+            <family>Custom SQL Query</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <object-id>[_6ED966A8B3494F35A4F1E91038FA6375]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>patient_last_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[patient_last_name]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>patient_last_name</remote-alias>
+            <ordinal>11</ordinal>
+            <layered>true</layered>
+            <family>Custom SQL Query</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <object-id>[_6ED966A8B3494F35A4F1E91038FA6375]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>provider_first_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[provider_first_name]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>provider_first_name</remote-alias>
+            <ordinal>6</ordinal>
+            <layered>true</layered>
+            <family>Custom SQL Query</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <object-id>[_6ED966A8B3494F35A4F1E91038FA6375]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>provider_last_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[provider_last_name]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>provider_last_name</remote-alias>
+            <ordinal>7</ordinal>
+            <layered>true</layered>
+            <family>Custom SQL Query</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <object-id>[_6ED966A8B3494F35A4F1E91038FA6375]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>region_id_reference</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[region_id_reference]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>region_id_reference</remote-alias>
+            <ordinal>20</ordinal>
+            <layered>true</layered>
+            <family>Custom SQL Query</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <object-id>[_6ED966A8B3494F35A4F1E91038FA6375]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>service_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[service_date]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>service_date</remote-alias>
+            <ordinal>8</ordinal>
+            <layered>true</layered>
+            <family>Custom SQL Query</family>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <object-id>[_6ED966A8B3494F35A4F1E91038FA6375]</object-id>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='boolean' name='CAP_CREATE_TEMP_TABLES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_ALWAYS_USE_LOCAL_MAPPING_TABLES'>false</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_PREFER_LOCAL_MAPPING_TABLES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_REMOTE_MAPPING_TABLES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_CASE_INSENSITIVE_CONTAINS'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_IGNORE_HINT_CHECK_NOT_NULL'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SORT_BY'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUBQUERIES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUBQUERY_QUERY_CONTEXT'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUPPORTS_LODJOINS'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUPPORT_ANALYTIC_FUNCTIONS'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_TOP_N'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_USE_QUERY_FUSION'>true</attribute>
+              <attribute datatype='boolean' name='CAP_SUPPORTS_SPLIT_FROM_LEFT'>true</attribute>
+              <attribute datatype='boolean' name='CAP_SUPPORTS_SPLIT_FROM_RIGHT'>true</attribute>
+              <attribute datatype='integer' name='charset'>0</attribute>
+              <attribute datatype='string' name='collation'>&quot;binary&quot;</attribute>
+              <attribute datatype='string' name='datasource'>&quot;<![CDATA[<?xml version='1.0' encoding='utf-8' ?>
+
+<datasource :source-version='18.1' formatted-name='Incomplete New Patient Profiles' inline='true' version='18.1' xml:base='https://prod-useast-b.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+  </document-format-change-manifest>
+  <repository-location id='IncompleteNewPatientProfiles' path='/t/thesmilistanalytics/datasources' revision='1.0' site='thesmilistanalytics' />
+  <connection :databaseVariables='' channel='https' class='sqlproxy' dbname='IncompleteNewPatientProfiles' local-dataserver='' port='443' server='prod-useast-b.online.tableau.com'>
+    <relation name='sqlproxy' table='[sqlproxy]' type='table' />
+    <cols>
+      <map key='[appointment_date]' value='[sqlproxy].[appointment_date]' />
+      <map key='[appointment_id_source]' value='[sqlproxy].[appointment_id_source]' />
+      <map key='[clinic_id_reference1]' value='[sqlproxy].[clinic_id_reference1]' />
+      <map key='[clinic_id_reference]' value='[sqlproxy].[clinic_id_reference]' />
+      <map key='[clinic_id_source]' value='[sqlproxy].[clinic_id_source]' />
+      <map key='[clinic_name_reference]' value='[sqlproxy].[clinic_name_reference]' />
+      <map key='[created_date_warehouse]' value='[sqlproxy].[created_date_warehouse]' />
+      <map key='[data_source_id]' value='[sqlproxy].[data_source_id]' />
+      <map key='[date_of_dentrix]' value='[sqlproxy].[date_of_dentrix]' />
+      <map key='[gl_code]' value='[sqlproxy].[gl_code]' />
+      <map key='[is_deleted_warehouse]' value='[sqlproxy].[is_deleted_warehouse]' />
+      <map key='[is_sbs]' value='[sqlproxy].[is_sbs]' />
+      <map key='[modified_date_warehouse]' value='[sqlproxy].[modified_date_warehouse]' />
+      <map key='[patient_chart]' value='[sqlproxy].[patient_chart]' />
+      <map key='[patient_date_of_birth]' value='[sqlproxy].[patient_date_of_birth]' />
+      <map key='[patient_first_name]' value='[sqlproxy].[patient_first_name]' />
+      <map key='[patient_id]' value='[sqlproxy].[patient_id]' />
+      <map key='[patient_id_source]' value='[sqlproxy].[patient_id_source]' />
+      <map key='[patient_last_name]' value='[sqlproxy].[patient_last_name]' />
+      <map key='[provider_first_name]' value='[sqlproxy].[provider_first_name]' />
+      <map key='[provider_last_name]' value='[sqlproxy].[provider_last_name]' />
+      <map key='[region_id_reference]' value='[sqlproxy].[region_id_reference]' />
+      <map key='[service_date]' value='[sqlproxy].[service_date]' />
+    </cols>
+  </connection>
+  <aliases enabled='yes' />
+  <column aggregation='Count' caption='Custom SQL Query' datatype='table' default-type='quantitative' name='[__tableau_internal_object_id__].[_6ED966A8B3494F35A4F1E91038FA6375]' pivot='key' role='measure' type='quantitative' user-datatype='table' visual-totals='Default' />
+  <column aggregation='Sum' datatype='integer' default-type='ordinal' name='[clinic_id_reference1]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+  <column aggregation='Sum' datatype='integer' default-type='ordinal' name='[clinic_id_reference]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+  <column aggregation='Sum' datatype='integer' default-type='ordinal' name='[data_source_id]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+  <column aggregation='Count' caption='chart ID' datatype='string' default-type='nominal' name='[patient_chart]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Sum' datatype='integer' default-type='ordinal' name='[region_id_reference]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+  <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+  <semantic-values>
+    <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+  </semantic-values>
+  <object-graph>
+    <objects>
+      <object caption='Custom SQL Query' id='_6ED966A8B3494F35A4F1E91038FA6375'>
+        <properties context=''>
+          <relation name='sqlproxy' table='[sqlproxy]' type='table' />
+        </properties>
+      </object>
+    </objects>
+  </object-graph>
+</datasource>
+]]>&quot;</attribute>
+              <attribute datatype='string' name='dialect-definition'>&quot;<![CDATA[<dialect-definition>
+  <primary-dialect class='hyper' version='0.0.0'>
+  </primary-dialect>
+</dialect-definition>
+]]>&quot;</attribute>
+              <attribute datatype='boolean' name='extract-active'>true</attribute>
+              <attribute datatype='boolean' name='fast-get-server-time'>true</attribute>
+              <attribute datatype='string' name='update-time'>&quot;12/4/2025 12:42:38 PM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <overridable-settings>
+        <date-options fiscal-year-start='january' start-of-week='sunday' />
+        <default-date-format />
+        <default-calendar-type>Gregorian</default-calendar-type>
+      </overridable-settings>
+      <aliases enabled='yes' />
+      <column aggregation='Count' caption='Custom SQL Query' datatype='table' default-type='quantitative' layered='true' name='[__tableau_internal_object_id__].[_6ED966A8B3494F35A4F1E91038FA6375]' pivot='key' role='measure' type='quantitative' user-datatype='table' visual-totals='Default' />
+      <column aggregation='Year' datatype='date' default-type='ordinal' layered='true' name='[appointment_date]' pivot='key' role='dimension' type='ordinal' user-datatype='date' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[appointment_id_source]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' datatype='integer' default-type='ordinal' layered='true' name='[clinic_id_reference1]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Sum' datatype='integer' default-type='ordinal' layered='true' name='[clinic_id_reference]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[clinic_id_source]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[clinic_name_reference]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Year' datatype='datetime' default-type='ordinal' layered='true' name='[created_date_warehouse]' pivot='key' role='dimension' type='ordinal' user-datatype='datetime' visual-totals='Default' />
+      <column aggregation='Sum' datatype='integer' default-type='ordinal' layered='true' name='[data_source_id]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Year' datatype='date' default-type='ordinal' layered='true' name='[date_of_dentrix]' pivot='key' role='dimension' type='ordinal' user-datatype='date' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[gl_code]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='boolean' default-type='nominal' layered='true' name='[is_deleted_warehouse]' pivot='key' role='dimension' type='nominal' user-datatype='boolean' visual-totals='Default' />
+      <column aggregation='Count' datatype='boolean' default-type='nominal' layered='true' name='[is_sbs]' pivot='key' role='dimension' type='nominal' user-datatype='boolean' visual-totals='Default' />
+      <column aggregation='Year' datatype='datetime' default-type='ordinal' layered='true' name='[modified_date_warehouse]' pivot='key' role='dimension' type='ordinal' user-datatype='datetime' visual-totals='Default' />
+      <column aggregation='Count' caption='chart ID' datatype='string' default-type='nominal' layered='true' name='[patient_chart]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Year' datatype='date' default-type='ordinal' layered='true' name='[patient_date_of_birth]' pivot='key' role='dimension' type='ordinal' user-datatype='date' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[patient_first_name]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[patient_id]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[patient_id_source]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[patient_last_name]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[provider_first_name]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[provider_last_name]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' datatype='integer' default-type='ordinal' layered='true' name='[region_id_reference]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Year' datatype='date' default-type='ordinal' layered='true' name='[service_date]' pivot='key' role='dimension' type='ordinal' user-datatype='date' visual-totals='Default' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Custom SQL Query' id='_6ED966A8B3494F35A4F1E91038FA6375'>
+            <properties context=''>
+              <relation name='sqlproxy' table='[sqlproxy]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Incomplete New Patient Profiles' name='sqlproxy.0a7db8b0epoo661245v0a1aalfac' />
+          </datasources>
+          <datasource-dependencies datasource='sqlproxy.0a7db8b0epoo661245v0a1aalfac'>
+            <column aggregation='Year' datatype='date' default-type='ordinal' layered='true' name='[appointment_date]' pivot='key' role='dimension' type='ordinal' user-datatype='date' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[appointment_id_source]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Sum' datatype='integer' default-type='ordinal' layered='true' name='[clinic_id_reference]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[clinic_name_reference]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column-instance column='[appointment_date]' derivation='None' name='[none:appointment_date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[appointment_id_source]' derivation='None' name='[none:appointment_id_source:nk]' pivot='key' type='nominal' />
+            <column-instance column='[clinic_id_reference]' derivation='None' name='[none:clinic_id_reference:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[clinic_name_reference]' derivation='None' name='[none:clinic_name_reference:nk]' pivot='key' type='nominal' />
+            <column-instance column='[patient_chart]' derivation='None' name='[none:patient_chart:nk]' pivot='key' type='nominal' />
+            <column-instance column='[patient_first_name]' derivation='None' name='[none:patient_first_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[patient_id_source]' derivation='None' name='[none:patient_id_source:nk]' pivot='key' type='nominal' />
+            <column-instance column='[patient_last_name]' derivation='None' name='[none:patient_last_name:nk]' pivot='key' type='nominal' />
+            <column aggregation='Count' caption='chart ID' datatype='string' default-type='nominal' layered='true' name='[patient_chart]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[patient_first_name]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[patient_id_source]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[patient_last_name]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:appointment_date:ok]'>
+            <groupfilter function='level-members' level='[none:appointment_date:ok]' />
+          </filter>
+          <filter class='categorical' column='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:appointment_id_source:nk]'>
+            <groupfilter function='level-members' level='[none:appointment_id_source:nk]' />
+          </filter>
+          <filter class='categorical' column='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:clinic_id_reference:ok]'>
+            <groupfilter function='level-members' level='[none:clinic_id_reference:ok]' />
+          </filter>
+          <filter class='categorical' column='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:clinic_name_reference:nk]'>
+            <groupfilter function='level-members' level='[none:clinic_name_reference:nk]' />
+          </filter>
+          <filter class='categorical' column='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:patient_chart:nk]'>
+            <groupfilter function='member' level='[none:patient_chart:nk]' member='%null%' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:patient_first_name:nk]'>
+            <groupfilter function='level-members' level='[none:patient_first_name:nk]' />
+          </filter>
+          <filter class='categorical' column='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:patient_id_source:nk]'>
+            <groupfilter function='level-members' level='[none:patient_id_source:nk]' />
+          </filter>
+          <filter class='categorical' column='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:patient_last_name:nk]'>
+            <groupfilter function='level-members' level='[none:patient_last_name:nk]' />
+          </filter>
+          <single-value-per-nest-shelf-sorts>
+            <single-value-per-nest-shelf-sort dimension-to-sort='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:patient_first_name:nk]' direction='ASC' measure-to-sort-by='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:patient_first_name:nk]' shelf='rows' />
+          </single-value-per-nest-shelf-sorts>
+          <slices>
+            <column>[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:patient_chart:nk]</column>
+            <column>[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:patient_first_name:nk]</column>
+            <column>[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:patient_last_name:nk]</column>
+            <column>[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:patient_id_source:nk]</column>
+            <column>[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:appointment_date:ok]</column>
+            <column>[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:clinic_name_reference:nk]</column>
+            <column>[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:clinic_id_reference:ok]</column>
+            <column>[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:appointment_id_source:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:appointment_date:ok]' value='180' />
+            <format attr='width' field='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:patient_first_name:nk]' value='196' />
+            <format attr='width' field='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:patient_last_name:nk]' value='180' />
+            <format attr='width' field='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:patient_id_source:nk]' value='152' />
+            <format attr='width' field='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:clinic_name_reference:nk]' value='216' />
+            <format attr='width' field='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:clinic_id_reference:ok]' value='168' />
+            <format attr='width' field='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:appointment_id_source:nk]' value='208' />
+            <format attr='width' field='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:patient_chart:nk]' value='108' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='background-color' value='#167aa2' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:patient_first_name:nk] / ([sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:patient_last_name:nk] / ([sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:patient_id_source:nk] / ([sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:appointment_date:ok] / ([sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:clinic_name_reference:nk] / ([sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:clinic_id_reference:ok] / ([sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:appointment_id_source:nk] / [sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:patient_chart:nk])))))))</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{6F82FB65-A60C-4A73-BBAF-68799C2E76D9}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Incomplete New Patient Profiles'>
+      <style />
+      <size maxheight='1000' maxwidth='1600' minheight='1000' minwidth='1600' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='Incomplete New Patient Profiles' name='sqlproxy.0a7db8b0epoo661245v0a1aalfac' />
+      </datasources>
+      <datasource-dependencies datasource='sqlproxy.0a7db8b0epoo661245v0a1aalfac'>
+        <column aggregation='Year' datatype='date' default-type='ordinal' layered='true' name='[appointment_date]' pivot='key' role='dimension' type='ordinal' user-datatype='date' visual-totals='Default' />
+        <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[appointment_id_source]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+        <column aggregation='Sum' datatype='integer' default-type='ordinal' layered='true' name='[clinic_id_reference]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+        <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[clinic_name_reference]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+        <column-instance column='[appointment_date]' derivation='None' name='[none:appointment_date:ok]' pivot='key' type='ordinal' />
+        <column-instance column='[appointment_id_source]' derivation='None' name='[none:appointment_id_source:nk]' pivot='key' type='nominal' />
+        <column-instance column='[clinic_id_reference]' derivation='None' name='[none:clinic_id_reference:ok]' pivot='key' type='ordinal' />
+        <column-instance column='[clinic_name_reference]' derivation='None' name='[none:clinic_name_reference:nk]' pivot='key' type='nominal' />
+        <column-instance column='[patient_first_name]' derivation='None' name='[none:patient_first_name:nk]' pivot='key' type='nominal' />
+        <column-instance column='[patient_id_source]' derivation='None' name='[none:patient_id_source:nk]' pivot='key' type='nominal' />
+        <column-instance column='[patient_last_name]' derivation='None' name='[none:patient_last_name:nk]' pivot='key' type='nominal' />
+        <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[patient_first_name]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+        <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[patient_id_source]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+        <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[patient_last_name]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98400' id='3' param='vert' type-v2='layout-flow' w='99000' x='500' y='800'>
+            <zone h='6700' id='6' param='horz' type-v2='layout-flow' w='99000' x='500' y='800'>
+              <zone h='5100' id='7' param='C:/Users/pablo.plata/Desktop/Logo.png' type-v2='bitmap' w='10938' x='1001' y='1600'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5100' id='10' param='horz' type-v2='layout-flow' w='75810' x='11939' y='1600'>
+                <zone forceUpdate='true' h='5100' id='8' type-v2='text' w='75810' x='11939' y='1600'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#167aa2' fontname='Tableau Bold' fontsize='14'>Incomplete New Patient Profiles</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone fixed-size='172' h='5100' id='9' is-fixed='true' type-v2='empty' w='11250' x='87749' y='1600'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#c0c0c0' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='1' />
+                <format attr='margin' value='7' />
+                <format attr='background-color' value='#ffffff' />
+              </zone-style>
+            </zone>
+            <zone h='7000' id='12' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='99000' x='500' y='7500'>
+              <zone h='5400' id='15' mode='checkdropdown' name='Sheet 1' param='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:appointment_id_source:nk]' show-apply='true' type-v2='filter' w='14000' x='1000' y='8300'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5400' id='16' mode='checkdropdown' name='Sheet 1' param='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:clinic_id_reference:ok]' show-apply='true' type-v2='filter' w='14000' x='15000' y='8300'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5400' id='17' mode='checkdropdown' name='Sheet 1' param='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:clinic_name_reference:nk]' show-apply='true' type-v2='filter' w='14000' x='29000' y='8300'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5400' id='18' mode='checkdropdown' name='Sheet 1' param='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:appointment_date:ok]' show-apply='true' type-v2='filter' w='14000' x='43000' y='8300'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5400' id='19' mode='checkdropdown' name='Sheet 1' param='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:patient_id_source:nk]' show-apply='true' type-v2='filter' w='14000' x='57000' y='8300'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5400' id='20' mode='checkdropdown' name='Sheet 1' param='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:patient_last_name:nk]' show-apply='true' type-v2='filter' w='14000' x='71000' y='8300'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5400' id='21' mode='checkdropdown' name='Sheet 1' param='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:patient_first_name:nk]' show-apply='true' type-v2='filter' w='14000' x='85000' y='8300'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#c0c0c0' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='1' />
+                <format attr='margin' value='7' />
+                <format attr='background-color' value='#ffffff' />
+              </zone-style>
+            </zone>
+            <zone h='84700' id='11' param='horz' type-v2='layout-flow' w='99000' x='500' y='14500'>
+              <zone h='83100' id='22' param='horz' type-v2='layout-flow' w='97998' x='1001' y='15300'>
+                <zone fixed-size='24' h='83100' id='23' is-fixed='true' type-v2='empty' w='2000' x='1001' y='15300'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='83100' id='13' name='Sheet 1' show-title='false' w='93625' x='3001' y='15300'>
+                  <layout-cache fixed-size-h='36421' fixed-size-w='1490' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#c0c0c0' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='1' />
+                <format attr='margin' value='7' />
+                <format attr='background-color' value='#ffffff' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+            <format attr='background-color' value='#f5f5f5' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='850' minheight='850' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='27' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98400' id='26' param='vert' type-v2='layout-flow' w='99000' x='500' y='800'>
+                <zone fixed-size='43' h='5100' id='7' is-fixed='true' param='C:/Users/pablo.plata/Desktop/Logo.png' type-v2='bitmap' w='10938' x='1001' y='1600'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='5100' id='8' type-v2='text' w='75810' x='11939' y='1600'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#167aa2' fontname='Tableau Bold' fontsize='14'>Incomplete New Patient Profiles</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5400' id='15' mode='checkdropdown' name='Sheet 1' param='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:appointment_id_source:nk]' show-apply='true' type-v2='filter' w='14000' x='1000' y='8300'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5400' id='16' mode='checkdropdown' name='Sheet 1' param='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:clinic_id_reference:ok]' show-apply='true' type-v2='filter' w='14000' x='15000' y='8300'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5400' id='17' mode='checkdropdown' name='Sheet 1' param='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:clinic_name_reference:nk]' show-apply='true' type-v2='filter' w='14000' x='29000' y='8300'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5400' id='18' mode='checkdropdown' name='Sheet 1' param='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:appointment_date:ok]' show-apply='true' type-v2='filter' w='14000' x='43000' y='8300'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5400' id='19' mode='checkdropdown' name='Sheet 1' param='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:patient_id_source:nk]' show-apply='true' type-v2='filter' w='14000' x='57000' y='8300'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5400' id='20' mode='checkdropdown' name='Sheet 1' param='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:patient_last_name:nk]' show-apply='true' type-v2='filter' w='14000' x='71000' y='8300'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5400' id='21' mode='checkdropdown' name='Sheet 1' param='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:patient_first_name:nk]' show-apply='true' type-v2='filter' w='14000' x='85000' y='8300'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='83100' id='13' is-fixed='true' name='Sheet 1' show-title='false' w='93625' x='3001' y='15300'>
+                  <layout-cache fixed-size-h='36421' fixed-size-w='1490' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+                <format attr='background-color' value='#f5f5f5' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{FBF608A3-2402-4808-B463-1777110084EB}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='Incomplete New Patient Profiles'>
+      <viewpoints>
+        <viewpoint name='Sheet 1' />
+      </viewpoints>
+      <active id='8' />
+      <simple-id uuid='{3A06F087-CE2A-4C3A-AA1C-189F17E969B6}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:patient_chart:nk]' type='filter' />
+            <card param='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:appointment_id_source:nk]' type='filter' />
+            <card param='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:clinic_id_reference:ok]' type='filter' />
+            <card param='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:clinic_name_reference:nk]' type='filter' />
+            <card param='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:appointment_date:ok]' type='filter' />
+            <card param='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:patient_id_source:nk]' type='filter' />
+            <card param='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:patient_last_name:nk]' type='filter' />
+            <card param='[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:patient_first_name:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='vertical'>
+              <node-reference>
+                <fields>
+                  <field>[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:patient_first_name:nk]</field>
+                  <field>[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:patient_last_name:nk]</field>
+                  <field>[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:patient_id_source:nk]</field>
+                  <field>[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:appointment_date:ok]</field>
+                  <field>[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:clinic_name_reference:nk]</field>
+                  <field>[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:clinic_id_reference:ok]</field>
+                  <field>[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:appointment_id_source:nk]</field>
+                  <field>[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:patient_chart:nk]</field>
+                </fields>
+                <multibucket>
+                  <bucket>%null%</bucket>
+                  <bucket>%null%</bucket>
+                  <bucket>&quot;1333126|1003148&quot;</bucket>
+                  <bucket>#2025-12-08#</bucket>
+                  <bucket>&quot;Middle Island (TDC)&quot;</bucket>
+                  <bucket>39</bucket>
+                  <bucket>&quot;5113840|1003148&quot;</bucket>
+                  <bucket>%null%</bucket>
+                </multibucket>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:appointment_date:ok]</field>
+            <field>[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:appointment_id_source:nk]</field>
+            <field>[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:clinic_id_reference:ok]</field>
+            <field>[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:clinic_name_reference:nk]</field>
+            <field>[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:patient_chart:nk]</field>
+            <field>[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:patient_first_name:nk]</field>
+            <field>[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:patient_id_source:nk]</field>
+            <field>[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[none:patient_last_name:nk]</field>
+            <field>[sqlproxy.0a7db8b0epoo661245v0a1aalfac].[yr:appointment_date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{81C1BDCB-DE14-4506-87D5-8E72C52AF753}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Incomplete New Patient Profiles' width='192'>
+      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
+      RW1zE1qMrwAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>

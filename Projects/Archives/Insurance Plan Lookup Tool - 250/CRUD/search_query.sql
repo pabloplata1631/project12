@@ -1,0 +1,9 @@
+	SELECT 
+    TABLE_NAME,
+    COLUMN_NAME,
+    DATA_TYPE
+FROM INFORMATION_SCHEMA.COLUMNS
+where COLUMN_NAME LIKE '%emp%'
+ORDER BY TABLE_NAME, COLUMN_NAME; 
+
+---- Select correct db before you query

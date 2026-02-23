@@ -1,0 +1,124 @@
+clinic_id_reference,clinic_name_reference,gl_code,date_of_dentrix,region_id_reference
+-1,Unknown,,,-1
+0,N/A,,,0
+1,57th Street,ML-100,2023-12-31,6
+2,Fifth Avenue,ML-565,2023-12-31,2
+3,Allerton,ML-535,2023-12-31,3
+4,Amityville,ML-110,2023-12-31,4
+5,Bayshore,ML-120,2023-12-31,6
+6,Bellerose,ML-515,2023-12-31,5
+7,Blue Bell,ML-645,2024-02-05,13
+8,Brick,ML-445,2023-12-31,7
+9,Brooklyn Heights,ML-610,2023-12-31,2
+10,Central,,2023-12-31,1
+11,Chester,ML-130,2023-12-31,6
+12,Clifton,ML-140,2023-12-31,8
+13,Commack,ML-150,2023-12-31,5
+14,Commack (Endo),ML-510,2023-12-31,5
+15,Cromwell,ML-640,2024-01-15,11
+16,Danbury,ML-575,2023-12-31,11
+17,East Islip,ML-475,2023-12-31,9
+18,East Meadow,ML-545,2023-12-31,9
+19,Elizabeth,ML-495,2023-12-31,8
+20,Englishtown,ML-160,2023-12-31,8
+21,Fishkill,ML-380,2023-12-31,3
+22,Garden City,ML-490,2023-12-31,4
+23,Garwood,ML-180,2023-12-31,6
+24,Greenpoint,ML-190,2023-12-31,2
+25,Herald Square,ML-480,2023-12-31,2
+26,Hicksville,ML-200,2023-12-31,4
+27,Hoboken,ML-585,2023-12-31,2
+28,Huntington,ML-205,2023-12-31,6
+29,Jackson,ML-440,2023-12-31,7
+30,Jamesport,ML-370,2023-12-31,5
+31,Lacey,ML-430,2023-12-31,7
+32,Livingston,ML-635,2023-12-31,8
+33,Malverne,ML-210,2023-12-31,6
+34,Massapequa,ML-220,2023-12-31,9
+35,Mattituck,ML-230,2023-12-31,5
+36,Medford NY,ML-235,2023-12-31,9
+37,Media,ML-655,2024-02-19,18
+38,Middle Island,ML-240,2023-12-31,5
+39,Middle Island (TDC),ML-615,2023-12-31,5
+40,Mountainside,ML-360,2023-12-31,8
+41,New City,ML-525,2023-12-31,3
+42,New Windsor,ML-555,2023-12-31,3
+43,North Flushing,ML-600,2023-12-31,2
+45,North Babylon,ML-250,2023-12-31,5
+46,Port Washington,ML-260,2023-12-31,4
+47,Riverhead,ML-270,2023-12-31,5
+48,Rockville Centre,ML-280,2023-12-31,4
+49,Sewell,ML-530,2023-12-31,19
+50,Shelter Island,ML-290,2023-12-31,6
+51,Shrewsbury,ML-420,2023-12-31,7
+52,Smithtown,ML-660,2023-12-31,5
+53,Somerset,ML-485,2023-12-31,8
+54,Souderton,ML-520,2023-12-31,13
+55,Staten Island,ML-505,2023-12-31,2
+56,Syosset,ML-310,2023-12-31,9
+57,Tele-dental,,2023-12-31,1
+58,Toms River,ML-410,2023-12-31,7
+59,Valley Stream,ML-460,2023-12-31,4
+60,Wading River,ML-620,2023-12-31,5
+61,Wantagh,ML-320,2023-12-31,4
+62,Warminster,ML-580,2023-12-31,13
+63,Washington Square Park,ML-570,2023-12-31,2
+64,Wayne,ML-625,2023-12-31,14
+65,West Chester,ML-650,2024-02-19,13
+66,West Hartford,ML-595,2023-12-31,11
+67,White Plains,ML-390,2023-12-31,3
+68,Whitestone,ML-330,2023-12-31,2
+69,Wilmington,ML-630,2023-12-31,18
+70,Woodside,ML-340,2023-12-31,2
+71,Yonkers,ML-605,2023-12-31,3
+206,Smithtown (OS),ML-300,2023-12-31,5
+207,Shillington,ML-665,2024-09-30,18
+208,Rahway,ML-730,2025-03-10,8
+209,Edgewater,ML-780,2025-01-20,11
+210,Boonsboro,ML-790,2025-01-20,11
+211,Middleton,ML-785,2025-01-20,11
+212,Central Square,ML-770,2025-05-05,10
+213,Baldwinsville,ML-765,2025-05-05,10
+214,Solvay,ML-775,2025-05-05,10
+215,Boston,ML-795,2024-10-14,12
+216,Wellesley,ML-800,2024-10-14,12
+217,Brinton Lake,ML-685,2025-02-24,13
+218,Doylestown,ML-690,2025-04-07,13
+219,Langhorne,ML-695,2025-04-07,13
+220,Springfield,ML-700,2025-02-24,13
+221,Woodlyn,ML-705,2025-02-24,13
+222,Academy,ML-670,2025-02-03,13
+223,Elkins Park,ML-675,2025-02-24,14
+224,Moorestown,ML-735,2025-03-10,14
+225,Rancocas,ML-740,2025-03-10,14
+226,Hamilton,ML-715,2025-03-24,15
+227,Lakewood,ML-750,2025-04-07,8
+228,Dayton,ML-745,2025-03-24,15
+229,Bridgeton,ML-710,2025-03-24,15
+230,Manahwkin,ML-725,2025-04-07,8
+231,Lawrenceville,ML-720,2025-03-24,15
+232,Medford NJ,ML-760,2025-03-10,15
+233,Cherry Hill,ML-805,2024-11-11,16
+234,Gibbsboro,ML-810,2024-11-11,16
+235,Haddon Heights,ML-815,2024-11-25,16
+236,Linwood,ML-820,2024-11-25,16
+237,Marlton,ML-755,2024-11-11,16
+238,Blackwood,ML-680,2024-11-25,16
+239,Amherst,ML-825,2024-12-16,17
+240,Buffalo,ML-830,2024-12-16,17
+241,West Seneca,ML-835,2024-12-16,17
+242,Unused,,2023-12-31,6
+243,Frederick,,2025-06-16,11
+244,Altamont,,,20
+245,Catskill,,2025-07-19,21
+246,Clifton Park,,,20
+247,Hurley Ave Kingston,,,21
+248,Hyde Park,,2025-07-19,21
+249,Loudonville,,,20
+250,MS Fishkill,,,21
+251,New Paltz,,2025-07-19,21
+252,Pine Bush,,,21
+253,Pine St Kingston,,,21
+254,Poughkeepsie,,2025-07-19,21
+255,Red Hook,,,21
+256,Wappingers Falls,,,21

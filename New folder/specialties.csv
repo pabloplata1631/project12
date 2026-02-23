@@ -1,0 +1,13 @@
+specialty_id_reference,specialty,business_line_id_reference
+-1,Unknown,-1
+0,N/A,0
+1,Office,1
+2,Hygienist,2
+3,Dentist,3
+4,Periodontist,4
+5,Endodontist,4
+6,Orthodontist,4
+7,Oral Surgeon,4
+8,Pedodontist,4
+9,Prosthodontist,4
+10,Denturist,4

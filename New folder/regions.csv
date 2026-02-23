@@ -1,0 +1,24 @@
+region_id_reference,region_name_reference,regional_manager_id_reference
+-1,Unknown,-1
+0,N/A,0
+1,Central,0
+2,New York City,3
+3,Hudson Valley,9
+4,Nassau County,10
+5,Eastern Long Island,4
+6,Closed,0
+7,Encore,11
+8,Northern NJ,8
+9,Western Long Island,10
+10,Syracuse,7
+11,Connecticut - Maryland,9
+12,Boston,10
+13,Pennsylvania,5
+14,Metro Philadelphia,2
+15,Southern NJ,2
+16,Lakeview,1
+17,Buffalo,6
+18,Pennsylvannia - Deleware,11
+19,Jersey Shore,1
+20,Placeholder - NY - 01,12
+21,Placeholder - NY - 02,13

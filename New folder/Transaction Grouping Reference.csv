@@ -1,0 +1,10 @@
+Chart_Status,Base_Class,Transaction_Category,Transaction_Class,Transaction_Type,Transaction_Class_name,Transaction_Description,Type
+90,1,Credit,Collections,Payment,Patient Payment/Collections,Patient,Normal
+90,3,Credit,Collections,Payment,Insurance Payment,Insurance,Normal
+90,4,Debit,Production,Charge,Finance Charge,Finance,Normal
+90,8,Debit,Production,Charge,Late Charge,Late,Normal
+105,0,Open,Open,Open,Open Treatment,Open,Normal
+90,0,Debit,Cacluated,Adjustment,Initial Balance,Initial Balance,Custom
+90,2,Calculated,Cacluated,Adjustment,Standard Adjustment/Adjustments,Calculated,Custom
+102,0,Debit,Production,Charge,Standard Charge,Calculated,Custom
+90,7,,Production,Adjustment,Special Adjustment,Special,Custom
